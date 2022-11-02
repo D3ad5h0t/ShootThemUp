@@ -38,6 +38,9 @@ public:
     UFUNCTION(BlueprintCallable, Category="Movement")
     bool IsRunning() const;
 
+    UFUNCTION(BlueprintCallable, Category="Movement")
+    float GetMovmentDirection() const;
+
 private:
     bool WantsToRun = false;
     bool IsMovingForward = false;
